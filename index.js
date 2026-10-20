@@ -160,7 +160,11 @@ export function apply(ctx) {
 			description: skill.description,
 			content: skill.content,
 			source: SOURCE,
-			invocation: { modelInvocable: true, userInvocable: true },
+			// Model-only. The composer's slash menu groups candidates by source,
+			// so a user-invocable skill would list the same twelve workflows a
+			// second time under a 技能 group next to the /opsx-* commands.
+			// Humans get the commands; the model gets the skills.
+			invocation: { modelInvocable: true, userInvocable: false },
 		})
 	}
 	for (const command of loadCommands()) {
