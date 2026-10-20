@@ -1,0 +1,9 @@
+# dsh-openspec-opsx bundle layer.
+#
+# Installing this package appends it to `dsh.profile.bundles`; the loader then
+# applies this patch, which mounts the package once on the host plane. Both the
+# skill registry and the command registry are global there, so every agent
+# preset sees `openspec-*` skills and `/opsx-*` commands.
+- insert:
+    - id: dsh-openspec-opsx
+      name: 'dsh-openspec-opsx'

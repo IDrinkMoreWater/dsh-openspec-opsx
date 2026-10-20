@@ -1,0 +1,50 @@
+{
+  "name": "dsh-openspec-opsx",
+  "version": "1.0.0",
+  "description": "OpenSpec spec-driven workflows for DeepSeek Harness: 12 openspec-* skills plus /opsx-* slash commands that inject the workflow prompt and append your arguments.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "skills/",
+    "commands/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "openspec",
+    "opsx",
+    "spec-driven",
+    "sdd",
+    "workflow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDrinkMoreWater/dsh-openspec-opsx.git"
+  },
+  "homepage": "https://github.com/IDrinkMoreWater/dsh-openspec-opsx#readme",
+  "bugs": {
+    "url": "https://github.com/IDrinkMoreWater/dsh-openspec-opsx/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
