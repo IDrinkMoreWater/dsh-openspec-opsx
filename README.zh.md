@@ -15,7 +15,7 @@
 dsh plugin --profile desktop add dsh-openspec-opsx
 ```
 
-重启 DSH 后生效。npm 上暂未发布时，可从 GitHub 安装：
+重启 DSH 后生效。也可从 GitHub 安装：
 
 ```sh
 dsh plugin --profile desktop add github:IDrinkMoreWater/dsh-openspec-opsx
