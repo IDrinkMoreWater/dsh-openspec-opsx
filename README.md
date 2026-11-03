@@ -15,7 +15,7 @@ Bring [OpenSpec](https://github.com/Fission-AI/OpenSpec)'s spec-driven developme
 dsh plugin --profile desktop add dsh-openspec-opsx
 ```
 
-Restart DSH afterwards. Until the package is on npm, install from GitHub:
+Restart DSH afterwards. install from GitHub:
 
 ```sh
 dsh plugin --profile desktop add github:IDrinkMoreWater/dsh-openspec-opsx
